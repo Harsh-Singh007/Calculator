@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        table {
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+  
+        input[type="button"] {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: aqua;
+            color: white;
+             font-size: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+  
+        input[type="text"] {
+            padding: 10px 15px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            border: 2px solid pink;
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <table>
+        <form name="form1">
+     <th colspan="4"><b>Calculator</b></th>
+     <tr> 
+        <td colspan="3"><input type="text" name="anser"></td>
+        <td>  <input type="button" value="clear" onclick="anser.value =''"></td>
+        </tr>
+     <tr>
+        <td><input type="button" value="1" onclick="anser.value+=1"></td>
+        <td><input type="button" value="2" onclick="anser.value+=2"></td>
+        <td><input type="button" value="3" onclick="anser.value+=3"></td>
+        <td><input type="button" value="+" onclick="anser.value+='+'"></td>
+     </tr>
+     <tr>
+        <td><input type="button" value="4" onclick="anser.value+=4"></td>
+        <td><input type="button" value="5" onclick="anser.value+=5"></td>
+        <td><input type="button" value="6" onclick="anser.value+=6"></td>
+        <td><input type="button" value="-" onclick="anser.value+='-'"></td>
+     </tr>
+     <tr>
+        <td><input type="button" value="7" onclick="anser.value+=7"></td>
+        <td><input type="button" value="8" onclick="anser.value+=8"></td>
+        <td><input type="button" value="9" onclick="anser.value+=9"></td>
+        <td><input type="button" value="*" onclick="anser.value+='*'"></td>
+     </tr>
+     <tr>
+        <td><input type="button" value="0" onclick="anser.value+=0"></td>
+        <td><input type="button" value="." onclick="anser.value+='.'"></td>
+        <td><input type="button" value="/" onclick="anser.value+='/'"></td>
+        <td><input type="button" value="=" onclick="anser.value=eval(anser.value)"></td>
+     </tr>
+
+    </form>
+    </table>
+    <!--
+    <form name="form1" align="center">
+        <input type="text" name="anser">
+        <br>
+        <input type="button" value="1" onclick="anser.value+=1">
+        <input type="button" value="2" onclick="form1.anser.value+=2">
+        <input type="button" value="3" onclick="form1.anser.value+=3">
+        <input type="button" value="+" onclick="form1.anser.value+='+'">
+        <br>
+        <input type="button" value="4" onclick="form1.anser.value+=4">
+        <input type="button" value="5" onclick="form1.anser.value+=5">
+        <input type="button" value="6" onclick="form1.anser.value+=6">
+        <input type="button" value="-" onclick="form1.anser.value+='-'">
+        <br>
+        <input type="button" value="7" onclick="form1.anser.value+=7">
+        <input type="button" value="8" onclick="form1.anser.value+=8">
+        <input type="button" value="9" onclick="form1.anser.value+=9">
+        <input type="button" value="*" onclick="form1.anser.value+='*'">
+        <br>
+        <input type="button" value="0" onclick="form1.anser.value+=0">
+        <input type="button" value="/" onclick="form1.anser.value+='/'">
+        <input type="button" value="." onclick="form1.anser.value+='.'">
+        <input type="button" value="=" onclick="form1.anser.value=eval(form1.anser.value)">
+        <br>
+        <input type="button" value="clear" onclick="form1.anser.value =''">
+        
+
+
+    </form>
+    -->
+</body>
+</html>
